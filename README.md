@@ -93,6 +93,7 @@ futurecommit <-->|breaks| workingcopy[crlf]
 
 It should be cleared up as: 
 - It is confusing to the user
+- It breaks changig branches, as nothing can be force reset and git always complains about files being overwritten.
 - It breaks squashing as you need to manually intervene if someone forgot to commit all files after a `.gitattributes` change. 
 - It does not offer any indications on how to resolve it
 
